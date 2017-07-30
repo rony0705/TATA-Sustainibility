@@ -1,8 +1,3 @@
-
-
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -54,7 +49,6 @@ function MM_swapImage() { //v3.0
             padding-top: 130px;
             padding-left: 22px;
         }
-
         #header-image {
             float: right;
             width: 405px;
@@ -64,42 +58,34 @@ function MM_swapImage() { //v3.0
             background-color: #006DB9;
             background-image: url('http://www.tatasteel.com/header-images/sustainability.jpg');
         }
-
         div, p, form, ul, li, h1, h2, h3, h4, h5, h6, a, span, form, img, br, input, textarea, label {
             padding: 0;
             margin: 0;
         }
-
         a, input {
             text-decoration: none;
             outline: none;
         }
-
         img {
             border: 0;
             outline: none;
         }
-
         ul {
             list-style-type: none;
         }
         -->
     </style>
-
-
     <!--<link rel="stylesheet" type="text/css" href="msdropdown/dd.css" />
     <script type="text/javascript" src="/msdropdown/js/jquery.js"></script>
     <script type="text/javascript" src="/msdropdown/js/jquery.dd.js"></script>
     <script type="text/javascript" src="/msdropdown/js/test.js"></script>-->
 </head>
-
 <body onload="MM_preloadImages('http://www.tatasteel.com/images/hindi02.gif')">
     <script src="/Scripts/bootstrap.min.js"></script>
     <script src="/Scripts/jquery-1.9.1.intellisense.js"></script>
     <script src="/Scripts/jquery-1.9.1.min.js"></script>
     <script type="text/javascript">
         $(function () {
-
             $('#nav').prepend("<div class='menuOverlay'></div>");
             $('#nav > li').hover(function () {
                 if ($(this).children('.subnav').length > 0) {
@@ -117,25 +103,19 @@ function MM_swapImage() { //v3.0
                 $('.menuOverlay').stop(true, true).hide();
                 $('#nav > li > a').css({ 'color': '#FFF', 'border': '1px solid #0083cb', 'height': '36px' });
             })
-
             $('.topSearchBox').bind('focus', function () {
                 $(this).animate({ 'width': '150px' });
             })
-
             $('.topSearchBox').bind('blur', function () {
                 $(this).animate({ 'width': '85px' });
             })
-
         });
     </script>
     <script language="JavaScript" type="text/javascript">
         String.prototype.trim = function () {
             return this.replace(/^\s+|\s+$/g, "");
         }
-
         function search_chk() {
-
-
             if (document.frmSearch.SearchString.value.trim() == '') {
                 alert("Please enter search phrase");
                 document.frmSearch.SearchString.focus();
@@ -149,7 +129,6 @@ function MM_swapImage() { //v3.0
             else {
                 var str = document.frmSearch.SearchString.value.trim();
                 var filter = /^([\w\s-]+(?:\.[\w\s-]+)*)$/;
-
                 if (filter.test(str)) {
                     if (!isNaN(str)) {
                         alert("Search phrase contains numbers!! Please check");
@@ -181,28 +160,20 @@ function MM_swapImage() { //v3.0
     </script>
     <script type="text/javascript" language="javascript">
         function Search() {
-
             if (document.getElementById("SearchString").value.search(/\S/) == -1) {
                 alert("Enter your search text");
                 document.getElementById("SearchString").focus();
                 return false;
-
             }
             window.location.href = "http://www.tatasteel.com/search-result.asp?search=" + document.getElementById('SearchString').value;
-
-
             // document.getElementById("frmsearch").submit();
-
         }
     </script>
-
-
     <div class="topPanel">
         <div class="center relative">
             <a href="http://www.tatasteel.com/">
                 <img src="http://www.tatasteel.com/images/tata-steel-logo.png" alt="" border="0" class="tslogo" />
             </a><a href="http://www.tata.com/" target="_blank"><img src="http://www.tatasteel.com/images/tata-group-logo.png" class="tglogo" alt="" /></a>
-
             <div class="topSearchSec">
                 <a href="http://www.tatasteel.com/" class="tophome">Home</a>
                 <div class="topSearch">
@@ -217,7 +188,6 @@ function MM_swapImage() { //v3.0
         </div>
     </div>
     <!-- top panel -->
-
     <div class="NavPanel">
         <div class="center relative" style="background: #0083cb; height: 37px;">
             <ul id="nav">
@@ -243,7 +213,6 @@ function MM_swapImage() { //v3.0
                                     <li><a href="http://www.tatasteel.com/corporate/management/board-of-directors.asp">Board of Directors</a></li>
                                     <li><a href="http://www.tatasteel.com/corporate/management/committees-of-the-board.asp">Committees of the Board</a></li>
                                     <!--<li><a href="/corporate/management/chairmans-message.asp">Chairman's Message</a></li>-->
-
                                 </ul>
                             </div>
                             <div class="mmSec width190">
@@ -267,7 +236,6 @@ function MM_swapImage() { //v3.0
                     </div>
                 </li>
                 <!-- Corporate -->
-
                 <li class="navli">
                     <a href="http://www.tatasteel.com/global-network/index.asp" class="navlink">Global Network</a>
                     <div class="subnav" style="display: none;">
@@ -295,7 +263,6 @@ function MM_swapImage() { //v3.0
                     </div>
                 </li>
                 <!-- Global Network -->
-
                 <li class="navli">
                     <a href="http://www.tatasteel.com/products-and-processes/index.asp" class="navlink">Products & Processes</a>
                     <div class="subnav" style="display: none;">
@@ -314,10 +281,8 @@ function MM_swapImage() { //v3.0
                                     <li><a href="http://www.tatasteel.com/products-and-processes/flat-products/electro-plated-steels.asp">Electro Plated Steels</a></li>
                                     <li><a href="http://www.tatasteel.com/products-and-processes/flat-products/electrical-steels.asp">Electrical Steels</a></li>
                                     <li><a href="http://www.tatasteel.com/products-and-processes/flat-products/narrow-strip.asp">Narrow Strip</a></li>
-
                                 </ul>
                             </div>
-
                             <div class="mmSec width190">
                                 <img src="http://www.tatasteel.com/images/magamenu-img/pp3.jpg" alt="" />
                                 <strong>Construction Products&nbsp;</strong>
@@ -336,22 +301,18 @@ function MM_swapImage() { //v3.0
                                     <li><a href="http://www.tatasteel.com/products-and-processes/agricultural-implements.asp">Agricultural Implements</a></li>
                                     <li><a href="http://www.tatasteel.com/products-and-processes/bearings.asp">Bearings</a></li>
                                 </ul>
-
                                 <strong>Processes</strong>
                                 <ul class="mmlinks2">
                                     <li><a href="http://www.tatasteel.com/products-and-processes/processes-business-services/design-and-automation.asp">Design &amp; Automation </a></li>
                                     <li><a href="http://www.tatasteel.com/products-and-processes/processes-business-services/research-and-development.asp">Research &amp; Development </a></li>
                                     <li><a href="http://www.tatasteel.com/products-and-processes/processes-business-services/consulting-services.asp">Consulting Services</a></li>
                                 </ul>
-
-
                             </div>
                             <div class="clear"></div>
                         </div>
                     </div>
                 </li>
                 <!-- Products & Processes -->
-
                 <li class="navli">
                     <a href="http://www.tatasteel.com/key-market-sectors/index.asp" class="navlink">Key Market Sectors</a>
                     <div class="subnav" style="display: none;">
@@ -393,7 +354,6 @@ function MM_swapImage() { //v3.0
                     </div>
                 </li>
                 <!-- Key Market Sectors -->
-
                 <li class="navli">
                     <a href="http://www.tatasteel.com/sustainability/index.asp" class="navlink">Sustainability</a>
                     <div class="subnav" style="display: none;">
@@ -431,7 +391,6 @@ function MM_swapImage() { //v3.0
                     </div>
                 </li>
                 <!-- Sustainability -->
-
                 <li class="navli">
                     <a href="http://www.tatasteel.com/investors/index.asp" class="navlink">Investors</a>
                     <div class="subnav" style="display: none;">
@@ -510,8 +469,6 @@ function MM_swapImage() { //v3.0
                                 <strong>Corporate Governance</strong>
                                 <strong style="border-bottom: none;">Compliance</strong>
                                 <ul class="mmlinks2">
-
-
                                     <li style="margin-bottom: 10px;"><a href="http://www.tatasteel.com/investors/pdf/terms-and-conditions-of-appointment-of-independent-directors.pdf" target="_blank">Terms and Conditions of appointment of Independent Directors</a></li>
                                     <li style="margin-bottom: 10px;"><a href="http://www.tatasteel.com/investors/pdf/criteria-of-making-payments-to-non-executive-directors.pdf" target="_blank">Criteria of making payments to Non-Executive Directors</a></li>
                                     <li><a href="http://www.tatasteel.com/investors/pdf/TCOC-non-executive-directors.pdf" target="_blank">Tata Code of Conduct for Non-Executive Directors</a></li>
@@ -524,7 +481,6 @@ function MM_swapImage() { //v3.0
                                     <li><a href="http://www.tatasteel.com/investors/pdf/corporate-governance-report.pdf" target="_blank">Corporate Governance Report</a></li>
                                     <li><a href="http://www.tatasteel.com/investors/quarterly-compliance-reports/change-in-directorship.asp" target="_blank">Change in Directorship</a></li>
                                 </ul>
-
                             </div>
                             <div class="clear"></div>
                             <div style="padding-top: 15px; margin-top: 15px; border-top: 1px solid #e0e0e0;">
@@ -538,7 +494,6 @@ function MM_swapImage() { //v3.0
                     </div>
                 </li>
                 <!-- Investors -->
-
                 <li class="navli">
                     <a href="http://www.tatasteel.com/media/index.asp" class="navlink">Media</a>
                     <div class="subnav" style="display: none;">
@@ -579,24 +534,17 @@ function MM_swapImage() { //v3.0
                     </div>
                 </li>
                 <!-- Media -->
-
                 <li class="navli"><a href="http://www.tatasteel.com/career.asp" class="navlink">Career</a> </li>
                 <!-- Career -->
                 <li class="navli"><a href="http://www.tatasteel.com/contact.asp" class="navlink">Contact</a></li>
                 <!-- Contact -->
-
-
             </ul>
         </div>
     </div>
     <!-- nav panel -->
-
     <div id="main-inside">
         <div id="path"><strong>You are in:</strong> <a href="/">Home</a> &gt; <a href="http://www.tatasteel.com/sustainability/index.asp">Sustainability</a></div>
-
         <div id="leftcolumn">
-
-
             <table width="147" border="0" cellpadding="0" cellspacing="0">
                 <tr>
                     <td height="64" valign="top">
@@ -605,7 +553,6 @@ function MM_swapImage() { //v3.0
 		<!--
 		d = new dTree('d');
 d.add(0,-1,' ',' ');
-
 d.add(1,0,'<b>The Tata Steel Approach</b>','http://www.tatasteel.com/sustainability/the-tata-steel-approach.asp');
 d.add(2,0,'<b>Sustainability Reports</b>','http://www.tatasteel.com/sustainability/csr-reports.asp');
 d.add(3,0,'<b>Sustainability Awards</b>','http://www.tatasteel.com/sustainability/sustainability-awards.asp');
@@ -616,23 +563,7 @@ d.add(7,0,'<b>Education</b>','http://www.tatasteel.com/sustainability/education.
 d.add(8,0,'<b>Sports & Adventure</b>','http://www.tatasteel.com/sustainability/sports-and-adventure.asp');
 d.add(9,0,'<b>Environment</b>','http://www.tatasteel.com/sustainability/environment.asp');
 d.add(10, 0, '<b>Samvaad - A Tribal Conclave</b>', 'http://www.tatasteelindia.com/events/samvaad/', '', '_blank');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		document.write(d);
-
 		//-->
                             </script>
                             <p>&nbsp;</p>
@@ -640,7 +571,6 @@ d.add(10, 0, '<b>Samvaad - A Tribal Conclave</b>', 'http://www.tatasteelindia.co
                     </td>
                 </tr>
             </table>
-
         </div>
         <div id="rightcolumn">
             <div id="color-patch">
@@ -654,7 +584,6 @@ d.add(10, 0, '<b>Samvaad - A Tribal Conclave</b>', 'http://www.tatasteelindia.co
                     creation of value, while being a steel industry benchmark organisation in Corporate Citizenship in its
                     efforts towards Social Responsibility and Environmental performance.
                 </p>
-
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                         <td width="66%">
@@ -931,7 +860,6 @@ d.add(10, 0, '<b>Samvaad - A Tribal Conclave</b>', 'http://www.tatasteelindia.co
             <a href="http://www.hungamadigitalservices.com/" target="_blank" class="right" style="color: #666;marign">powered by HDS</a>
         </div>
     </div>
-
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -939,11 +867,8 @@ d.add(10, 0, '<b>Samvaad - A Tribal Conclave</b>', 'http://www.tatasteelindia.co
             }, i[r].l = 1 * new Date(); a = s.createElement(o),
             m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
-
         ga('create', 'UA-15463542-1', 'auto');
         ga('send', 'pageview');
-
     </script>
-
 </body>
 </html>
