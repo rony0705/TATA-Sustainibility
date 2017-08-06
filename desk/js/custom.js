@@ -24,6 +24,10 @@ $(window).ready(function () {
 				$("#navOverlay").remove();
 				$(".mobile-nav #menuBtn img").fadeIn();
 				$('.content .head, .content .caption, .controls').animate({'opacity': '1'},1000);
+			} else {
+				if($('.mobile-nav #menuBtn img').css("display") === "none") {
+					$(".mobile-nav #menuBtn img").fadeIn()
+				}
 			}
 		}
 	})
