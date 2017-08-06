@@ -18,6 +18,9 @@ body {
 	background-color: rgba(0,0,0,.2);
 	z-index: 99;
 	animation: navStart 2s 1;
+	background-image: none;
+	border: none;
+	border-radius: 0;
 }
 
 @keyframes navStart {
@@ -41,6 +44,9 @@ body {
 }
 .navContainer .nav-pills .active a:hover {
 	background-color: rgba(0,0,0,.7);
+}
+.navContainer .nav-pills li:not(.active) a:focus {
+	background-color: transparent;
 }
 .navContainer .nav-pills li:not(.active) a:hover {
 	background-color: rgba(0,0,0,.4);
@@ -99,10 +105,11 @@ body {
 	z-index: 2;
 	position: fixed;
 	top: 40%;
+	font-size: 60px;
 	width: 100%;
 	color: #fff;
 	text-align: center;
-	text-shadow: 1px 1px 1px gray;
+	text-shadow: 2px 1px 1px gray;
 	user-select: none;
 	animation: startSustainHead 1.5s 1;
 }
@@ -167,4 +174,83 @@ body {
 
 .controls li:hover span {
 	display: inline;
+}
+
+.controls li.active {
+	background-color: white;
+}
+
+.controls li.active span {
+	color: black;
+}
+
+.mobile-nav {
+	position: fixed;
+	z-index: 9999;
+	padding: 10px 0 0 10px;
+}
+
+#navOverlay {
+	position: fixed;
+	background-color: rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	z-index: 99999;
+	transition: 250ms;
+	padding: 10px;
+	text-align: center;
+	animation: showNavMobile 1s 1;
+}
+
+#navOverlay #close {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	font-family: verdana;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+}
+
+#navOverlay ul li a {
+	background-color: rgba(0,0,0,.4);
+	transition: 250ms;
+	color: white;
+}
+
+#navOverlay ul li a:hover {
+	background-color: rgba(255,255,255,.2);
+}
+
+#navOverlay ul li.active a {
+	background-color: rgba(255,255,255,.2);
+	color: rgba(0,0,0,.8);
+}
+
+@keyframes showNavMobile {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+#navOverlay img.logo {
+	margin: 10px;
+}
+
+@media (max-width: 767px) {
+	.content .home_start video {
+		transform: scale(5,5);
+	}
+
+	.content .home_start .head {
+		left: 0px;
+		font-size: 10vw;
+	}
+
+	.content .home_start .caption {
+		font-size: 4vw;
+		left: 0px;
+	}
 }

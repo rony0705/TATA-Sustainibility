@@ -20,42 +20,55 @@
 <body>
 <div class="container">
 	<div class="row">
-		<div class="navContainer navbar col-md-3">
+		<div class="navContainer navbar navbar-default col-md-3 hidden-sm hidden-xs">
 			<div class="container-fluid text-center">
 				<div class="navbar-header text-center">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
 					<a href="#" class="navbar-brand">
 						<img src="img/logo.png">
 					</a>
 				</div>
 			</div>
-			<ul class="nav nav-pills nav-stacked text-center">
-				<li><div class="form-group">
-					<input type="text" name="q" class="form-control" placeholder="Search">
-				</div></li>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Corporate</a></li>
-				<li class="active"><a href="#">Sustainability</a></li>
-				<li><a href="#">Investors</a></li>
-				<li><a href="#">Products and Solutions</a></li>
-				<li><a href="#">Media</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
+			<div id="menus">
+				<ul class="nav nav-pills nav-stacked text-center">
+					<li><div class="form-group">
+						<input type="text" name="q" class="form-control" placeholder="Search">
+					</div></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Corporate</a></li>
+					<li class="active"><a href="#">Sustainability</a></li>
+					<li><a href="#">Investors</a></li>
+					<li><a href="#">Products and Solutions</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="visible-sm visible-xs mobile-nav">
+			<a href="#" class="btn" id="menuBtn">
+				<img src="img/logo.png">
+			</a>
 		</div>
 		<div class="content col-md-9">
 			<div class="jumbotron home_start">
 				<video autoplay="true" autobuffer loop>
 					<source src="http://tatasteel.com//media/3618/windmill-farm-1.mp4" type="video/mp4">
 				</video>
-				<h1 class="head">Sustainability</h1>
-				<p class="caption">The driver of our thoughts and actions for a brighter future.</p>
+				<p class="head">Sustainability</p>
+				<p class="caption">The driver of our thoughts and  <br> actions for a brighter future.</p>
 			</div>
 		</div>
 	</div>
 </div>
 
 <ul class="controls">
-	<li id="one">
+	<li id="one" class="active">
 		<span>Sustainability</span>
 	</li>
 	<li id="two">
