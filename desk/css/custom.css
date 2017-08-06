@@ -227,7 +227,7 @@ body {
 
 #navOverlay ul li.active a {
 	background-color: rgba(255,255,255,.2);
-	color: rgba(0,0,0,.8);
+	color: rgba(255,255,255,.8);
 }
 
 @keyframes showNavMobile {
